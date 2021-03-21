@@ -35,6 +35,20 @@ For now, development observes the following policy for branches:
   DISTRO=alpine # (pharus) Distribution:   alpine|debian
   ```
 
+## Run Tests w/ Docker
+
+To run the test watcher, perform the following:
+
+1) In one terminal, start the `dev` Docker environment with the above instructions to start LabBook and Pharus with hot-reload support.
+2) In another terminal, you can run the watcher using:
+  ```shell
+  docker exec -it datajoint-labbook_datajoint-labbook_1 npm test -- --coverage
+  ```
+  or run it once using:
+  ```shell
+  docker exec -ite CI=true datajoint-labbook_datajoint-labbook_1 npm test -- --coverage
+  ```
+
 ## Working with git submodule dependency
 
 `pharus` is treated as a backend dependency managed by git's builtin submodules. It allows us to nest entire git repos with separate history and easy access. Below are some helpful commands to be used after cloning the source repo.
