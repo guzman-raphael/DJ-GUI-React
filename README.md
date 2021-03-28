@@ -19,7 +19,7 @@ If you have not done so already, please install the following dependencies:
 
 ## Prerequisites
 
-Download the `docker-compose-deploy.yaml` docker environment from the release located [here](https://github.com/datajoint/datajoint-labbook/releases/latest/download/docker-compose-deploy.yaml).  
+Download the `docker-compose-deploy.yaml` docker environment from the release located [here](https://github.com/datajoint/datajoint-labbook/releases/latest/download/docker-compose-deploy.yaml).
 
 ## Running the application
 
